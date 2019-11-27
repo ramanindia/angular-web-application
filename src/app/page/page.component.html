@@ -1,0 +1,19 @@
+<!--================ Hero sm Banner start =================-->      
+  <section  class="hero-banner hero-banner--sm"  *ngIf="pageData[0]" [ngStyle]="{'background-image':'url('+pageData[0].page_banner+')'}" >
+    <div class="hero-banner__content text-center">
+      <h1 *ngIf="pageData[0].title.rendered" [innerHtml]="pageData[0].title.rendered"></h1>
+      <nav aria-label="breadcrumb" class="banner-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" [innerHtml]="pageData[0].title.rendered"></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!--================ Hero sm Banner end =================-->
+  <!--================ About section start =================-->
+ <section class="section-margin">
+    <div *ngIf="pageData[0]" class="container"  [innerHtml]="pageData[0].content.rendered">
+    </div>
+  </section>
+  <!--================ About section end =================-->

@@ -1,0 +1,54 @@
+ <!--================ Header Top Area Start =================-->
+  <section class="header-top d-none d-sm-block">
+    <div class="container">
+      <div class="d-sm-flex justify-content-between">
+        <ul class="header-top__info mb-2 mb-sm-0">
+          <li *ngIf="headerdatas.mobile_no"><a href="tel:{{headerdatas.mobile_no}}"><span class="align-middle"><i class="ti-mobile"></i></span>{{headerdatas.mobile_no}}</a></li>
+          <li *ngIf="headerdatas.email" ><a href="mailto:{{headerdatas.email}}"><span class="align-middle"><i class="ti-email"></i></span>{{headerdatas.email}}</a></li>
+        </ul>
+        <ul class="header-top__social">
+          <li *ngIf="headerdatas.facebook_URL"><a href="{{headerdatas.facebook_URL}}" target="_blank"><i class="ti-facebook"></i></a></li>
+          <li *ngIf="headerdatas.twtiter_URL"><a href="{{headerdatas.twtiter_URL}}"  target="_blank"><i class="ti-twitter-alt"></i></a></li>
+          <li *ngIf="headerdatas.google"><a href="{{headerdatas.google}}"  target="_blank"><i class="ti-google"></i></a></li>
+          <li *ngIf="headerdatas.linkedin"><a href="{{headerdatas.linkedin}}"  target="_blank"><i class="ti-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--================ Header Top Area end =================-->
+<!-- {{ appGlobals.baseAppUrl }} -->
+  <!--================ Header Menu Area start =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <a *ngIf="headerdatas.logo" class="navbar-brand logo_h" routerLink="/"  ><img src="{{headerdatas.logo}}" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"  routerLinkActive="active"><a class="nav-link" routerLink="/home" >Home </a></li> 
+              <li class="nav-item"  routerLinkActive="active"><a class="nav-link" routerLink="/about">About us</a></li> 
+              <li class="nav-item"  routerLinkActive="active" ><a class="nav-link" routerLink="/lorem-ipsum">Lorem Ipsum</a>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/home" >Blog</a></li>
+                  <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/home" >Blog Details</a></li>
+                </ul>
+				
+				</li>
+			 <li class="nav-item"  routerLinkActive="active" ><a class="nav-link" routerLink="/privacy-policy">Privacy Policy</a>
+              <li class="nav-item"  routerLinkActive="active" ><a class="nav-link"  routerLink="/contact">Contact</a></li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
