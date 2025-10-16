@@ -16,10 +16,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
  ng build  --base-href 'projectserverpath'
  
- like as local php server path http://10.30.8.231/web/angular/first/
- 
- build command :-  ng build  --base-href http://10.30.8.231/web/angular/first/
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
